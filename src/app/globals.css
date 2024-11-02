@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WebKit tarayıcıları için */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox için */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+.custom-scrollbar1::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Firefox için */
+  .custom-scrollbar1 {
+    scrollbar-width: none;
+  }
+/* global.css veya styles.css dosyasına ekleyin */
+/* global.css veya styles.css dosyasına ekleyin */
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+  
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 2s infinite;
+  }
+/* Tailwind CSS already includes the necessary classes */
+.transition-all {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+ 
